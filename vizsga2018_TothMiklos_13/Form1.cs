@@ -120,7 +120,6 @@ namespace vizsga2018_TothMiklos_13
                 }
                 stringToSave += Environment.NewLine;
             }
-            MessageBox.Show(Regex.Escape(stringToSave));
             File.WriteAllText(@"..//../lakoparkok.txt", stringToSave);
         }
     }
