@@ -31,7 +31,7 @@ namespace vizsga2018_TothMiklos_13
 
         private void imgLoad(PictureBox pb, int x, int y)
         {
-            string house = kepekPath+@"Haz" +HL.Lakoparkok[0].Hazak[x, y]+".jpg";
+            string house = kepekPath+@"Haz" +HL.Lakoparkok[pageNum].Hazak[x, y]+".jpg";
             string alternative = kepekPath+@"kereszt.jpg";
             pb.ImageLocation = (File.Exists(house)) ? (house) : (alternative);
         }
